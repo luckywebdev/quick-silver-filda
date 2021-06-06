@@ -1,0 +1,11 @@
+{
+  "cash": "125464.05057099427",
+  "collateralFactor": "700000000000000000",
+  "fToken": "0xCca471B0d49c0d4835a5172Fd97ddDEA5C979100",
+  "fildaSpeed": "200000000000000000",
+  "name": "HDOT",
+  "price": "16.67",
+  "token": "0xA2c49cEe16a5E5bDEFDe931107dc1fae9f7773E3",
+  "totalBorrows": "73093.14384071341",
+  "totalSupply": "198557.1944117077"
+}

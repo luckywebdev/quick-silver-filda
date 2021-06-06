@@ -1,0 +1,408 @@
+@import '../variables.scss';
+
+.header {
+    color: white;
+    background-color: $DarkBg;
+    .headerLink {
+        color: $White;
+        margin-right: 20px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        opacity: 0.5;
+        border-right: 0.5px solid $Grey;
+        padding-right: 20px;
+        &.active {
+            font-weight: 800;
+            opacity: 1;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+            margin-right: 0;
+        }
+        .navTitle {
+            margin-left: 10px;
+        }
+    }
+
+    .compBalance {
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.75rem;
+    }
+
+    .claimButton {
+        margin-right: 10px;
+    }
+
+    .networkWarning {
+        background-color: $Black;
+        color: $Grey;
+        text-align: center;
+        padding: 1rem 1rem;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .warningText {
+            margin-left: 10px;
+        }
+    }
+
+    .accountWarning {
+        background-color: $Green;
+        color: $Black;
+        text-align: center;
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .warningText {
+            margin-left: 10px;
+            display: block;
+            text-rendering: optimizeLegibility;
+
+            .animTextFlow,
+            .animTextFlowHover:hover {
+                $animationSteps: 20;
+                $animationDuration: 50;
+                $animationElement: span;
+                $animationElementsCount: 100;
+                $delayBetweenLetters: 0.1;
+
+                #{$animationElement} {
+                    animation-name: anim-text-flow-keys;
+                    animation-duration: #{$animationDuration}s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    animation-fill-mode: forwards;
+                }
+
+                @keyframes anim-text-flow-keys {
+                    @for $i from 0 through $animationSteps {
+                        #{percentage($i * (1 / $animationSteps))} {
+                            color: hsla(random(365), 60, random(50), 1);
+                        }
+                    }
+                }
+
+                $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+
+                @for $i from 1 through $animationElementsCount {
+                    #{$animationElement}:nth-of-type(#{$i}) {
+                        animation-delay: #{($i * $delayBetweenLetters) -
+                            $totalDelayTime}s;
+                    }
+                }
+            }
+        }
+    }
+
+    .networkUnsupported {
+        background-color: $Red;
+        color: $White;
+        text-align: center;
+        padding: 1rem 1rem;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .warningText {
+            margin-left: 10px;
+        }
+    }
+
+    .headerMenu {
+        display: flex;
+        align-items: center;
+        padding:30px 0;
+
+        .connectedLogo {
+            height:20px;
+            margin-left:5px;
+        }
+    }
+}
+
+.header_aboutUs {
+    .headerMenu {
+        padding:10px 0;
+    }
+}
+
+.connectTile {
+    background-color: $ExtraDarkBg;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 190px;
+    margin-top: 10px;
+    border: none;
+
+    .connectTitle {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $White;
+        margin-top: 2rem;
+    }
+
+    .connectTag {
+        font-size: 0.75rem;
+        font-weight: 200;
+        color: $Grey;
+    }
+}
+
+.txnModal {
+    .assetName {
+        color: $White;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .txnTypeDesc {
+        font-size: 0.75 rem;
+        font-weight: 400;
+        color: $Grey;
+        margin-top: 5px;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    }
+    .txnValueSmall {
+        font-size: 0.75rem !important;
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .detailedBalance {
+        font-size: 0.5rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .repayInFullContainer {
+        Button {
+            margin-right: 10px;
+        }
+    }
+
+    .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .inCollateralMsg {
+        text-align: center;
+        color: $White;
+    }
+
+    .loanLimitBarOuter {
+        background-color: $Grey;
+        height: 12px;
+        margin-top: 10px;
+        border-top: 5px solid $LightBg;
+        border-bottom: 5px solid $LightBg;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loanLimitBarInner {
+        background-color: $Yellow;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .infoText {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .percentText {
+        font-size: 0.75rem;
+        color: $White;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .percentValue {
+        font-size: 0.75rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .claimContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .balanceContainer {
+            padding-bottom: 1rem;
+            .label {
+                color: $Grey;
+                font-size: 0.75rem;
+            }
+            .value {
+                color: $White;
+                font-size: 1rem;
+            }
+        }
+
+        .icon {
+            color: $Green;
+            margin: 1rem;
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .navMenuContainer {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .headerMenu {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .headerControls {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .compBalanceContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+    .claimButton {
+        margin-left: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .headerMenu {
+        flex-direction: column;
+        justify-content: center;
+
+        .headerControls {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            .navMenuContainer {
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .header {
+        .headerLink {
+            flex-direction: column;
+            .navTitle {
+                margin: 10px;
+            }
+        }
+    }
+
+    .headerMenu {
+        flex-direction: column;
+        justify-content: center;
+
+        .headerControls {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            .compBalanceContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+
+                .claimButton {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

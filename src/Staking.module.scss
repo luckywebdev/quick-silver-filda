@@ -1,0 +1,410 @@
+@import 'variables';
+
+.staking {
+    color: $White;
+    background-color: $DarkBg;
+    .introContainer {
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $LightBg;
+        .introText {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .dashboardContainer {
+        background: linear-gradient(180deg, $LightBg 4rem, $DarkBg 4rem);
+        padding-top: 20px;
+        .tile {
+            background-color: $ExtraDarkBg;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 700px;
+            .itemContainer {
+                text-align: center;
+                border-right: 1px solid $LightBg;
+                .label {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    color: $Grey;
+                }
+                .value {
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                    color: $Green;
+                    margin-top: 10px;
+                }
+                .valueSmall {
+                    font-size: 0.75rem;
+                    font-weight: 300;
+                    color: $White;
+                    margin-top: 3px;
+                }
+                &:last-child {
+                    border: none;
+                    .value {
+                        color: $LightBlue;
+                    }
+                }
+            }
+        }
+    }
+    .poolsContainer {
+        padding: 3rem 0rem;
+        .itemContainer {
+            margin-bottom: 30px;
+            .tile {
+                background-color: $ExtraDarkBg;
+                border-radius: 10px;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem;
+                border: 1px solid $ExtraDarkBg;
+                &.active {
+                    border: 1px solid $Yellow;
+                }
+                .infoContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    .activeStatusContainer {
+                        width: 100%;
+                        color: $Yellow;
+                        height: 20px;
+                        font-size: 0.75rem;
+                        div {
+                            text-align: center;
+                        }
+                    }
+                    .header {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                        .poolName {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            margin-top: 7px;
+                        }
+                    }
+                    .rateContainer {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 1.5rem;
+                        .rateItem {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 1rem 2rem;
+                            border-right: 1px solid $LightBg;
+                            .label {
+                                font-size: 0.75rem;
+                                font-weight: 300;
+                                color: $Grey;
+                            }
+                            .value {
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: $White;
+                            }
+                            &:last-child {
+                                border: none
+                            }
+                        }
+                    }
+                    .totalStakedContainer {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                        .label {
+                            font-size: 0.75rem;
+                            font-weight: 300;
+                            color: $Grey;
+                        }
+                        .value {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            color: $White;
+                            .tokenName {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                    .infoItem {
+                        width: 100%;
+                        border-bottom: 1px solid $LightBg;
+                        padding: 0.75rem 0rem;
+                        .label {
+                            text-align: left;
+                            font-size: 0.75rem;
+                            font-weight: 300;
+                            color: $Grey;
+                        }
+                        .value {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            align-items: flex-start;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            color: $White;
+                            text-align: right;
+                            .tokenName {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                .footerContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 100%;
+                    .link {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        color: $Green;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                        a {
+                            margin-top: 3px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .balance {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        color: $Grey;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                        span {
+                            color: $White;
+                            margin-left: 10px;
+                        }
+                    }
+                    .addressContainer {
+                        font-size: 0.6rem;
+                        font-weight: 400;
+                        color: $Grey;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        a {
+                            color: $Yellow;
+                        }
+                    }
+                    .buttonsContainer {
+                        width: 100%;
+                    }
+                    .inProgressMsg {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        div {
+                            margin-top: 10px;
+                            a {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .withdrawButtonsContainer {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        div {
+                            flex-grow: 1;
+                            &:first-child {
+                                margin-right: 5px;
+                            }
+                            &:last-child {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .emptyTile {
+                height: 600px;
+                border: 1px solid $LightBg;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $Grey;
+                font-weight: 300;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.txnModal {
+
+    &.withdraw {
+        a {
+            color: $Yellow !important
+        }
+    }
+    &.unstake {
+        a {
+            color: $Yellow !important
+        }
+    }
+    &.redeem {
+        a {
+            color: $Yellow !important
+        }
+    }
+
+    .assetName {
+        color: $White;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .txnTypeDesc {
+        font-size: 0.75 rem;
+        font-weight: 400;
+        color: $Grey;
+        margin-top: 5px;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+    }
+    .txnValueSmall {
+           font-size: 0.75rem !important;
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .alertMsg, .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .noCollateralMsgTitle {
+        font-size: 1rem;
+        color: $White;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .noCollateralMsgDesc {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+    }
+
+    .loanLimitBarOuter {
+        background-color: $Grey;
+        height: 12px;
+        margin-top: 10px;
+        border-top: 5px solid $Black;
+        border-bottom: 5px solid $Black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loanLimitBarInner {
+        background-color: $Yellow;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .infoText {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .percentText {
+        font-size: 0.75rem;
+        color: $White;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .percentValue {
+        font-size: 0.75rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+}

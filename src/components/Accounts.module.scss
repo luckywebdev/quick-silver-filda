@@ -1,0 +1,434 @@
+@import '../variables.scss';
+
+.accountsContainer {
+    color: white;
+    padding: 0.5rem 2rem;
+
+    .marketsTableTitleRow {
+        color: $Grey;
+        font-size: 0.6rem;
+        border-bottom: 0.01rem solid $DarkGrey;
+        padding-bottom: 1rem;
+
+        .marketsTableTitle {
+            text-align: right;
+
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+
+    .marketsItemRow {
+        color: $White;
+        font-size: 0.8rem;
+        border-bottom: 0.01rem solid $DarkGrey;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .marketNameContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1rem;
+            .marketName {
+                margin-left: 0.5rem;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .marketValue {
+            text-align: right;
+
+            .marketValueItem {
+                .marketValueLabel {
+                    font-size: 0.75rem;
+                    color: $Grey;
+                }
+            }
+
+            .value {
+                font-size: 0.75rem;
+                text-align: right;
+            }
+
+            .valueSmall {
+                font-size: 0.5rem;
+                color: $Grey;
+            }
+        }
+
+        .marketAction {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .repayButton {
+                flex: 1
+            }
+        }
+
+        .inProgressContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            .inProgressMsg {
+                margin-left: 10px;
+            }
+            .txnLink {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.savingsTab {
+    border-radius: 10px 0px 0px 0px !important;
+}
+
+.loansTab {
+    border-radius: 0px 10px 0px 0px !important;
+}
+
+.tabContent {
+    background-color: $ExtraDarkBg !important;
+    padding: 25px ;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.emptyMessageContainer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .messageTitle {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .messageDesc {
+        font-size: 0.75rem;
+        font-weight: 200;
+        color: $Grey;
+        margin-top: 5px;
+    }
+}
+
+.txnModal {
+
+    .assetName {
+        color: $White;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .txnTypeDesc {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $Grey;
+        margin-top: 5px;
+    }
+    .txnTypeTip {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: $Yellow;
+        margin-top: 5px;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+    }
+    .txnValueSmall {
+           font-size: 0.75rem !important;
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .detailedBalance {
+        font-size: 0.5rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .repayInFullContainer {
+        Button {
+            margin-right: 10px
+        }
+    }
+
+    .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .warning {
+        font-size: 30px;
+        color: $Yellow;
+    }
+    .checkBox {
+        cursor: pointer;
+        color: lightgray;
+    }
+
+    .inCollateralMsg {
+        text-align: center;
+        color: $White
+    }
+
+    .loanLimitBarOuter {
+        background-color: $Grey;
+        height: 12px;
+        margin-top: 10px;
+        border-top: 5px solid $Black;
+        border-bottom: 5px solid $Black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loanLimitBarInner {
+        background-color: $Yellow;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .loanLimitExceedBarInner {
+        background-color: $Red;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .infoText {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .txnCheckTips {
+        color: $Yellow;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+        margin: 0 10px 0 5px;
+        padding:0;
+    }
+    .checkTips {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .percentText {
+        font-size: 0.75rem;
+        color: $White;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .percentValue {
+        font-size: 0.75rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+}
+
+.assetSelectModal {
+    .selectAssetDesc {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    .selectContainer {
+        width: 100%;
+        max-height: 70vh;
+        overflow-y: auto;
+
+        .assetItemRow {
+            color: $White;
+            font-size: 0.8rem;
+            border-bottom: 0.01rem solid $DarkGrey;
+            padding: 1rem;
+            width: 100%;
+            cursor: pointer;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background-color: $LightBg;
+            }
+
+            .assetNameContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 1rem;
+
+                img{
+                    background-color: $DarkBg;
+                    padding: 10px;
+                    border-radius: 5px;
+
+                }
+
+                .assetName {
+                    margin-left: 0.5rem;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            &-track {
+                background: transparent;
+            }
+            &-thumb {
+                background: $LightBg;
+                border-radius: 10px;
+            }
+        }
+    }    
+}
+
+.formGroup {
+    position: relative;
+    input {
+        box-shadow: 0 0 0 0.2rem rgba(79,218,184, .25);
+        padding-right: 55px;
+    }
+    button {
+        position: absolute;
+        right:10px;
+        top:50%;
+        transform:translateY(-50%);
+        border-radius: 0;
+        background: #424a48;
+        color: #f1f4f6;
+        border:0;
+        box-shadow: initial;
+        padding:3px 6px;
+        border-radius: 0.2rem;
+        &:hover {
+            box-shadow: initial;
+            color:#f1f4f6;
+            background-color: darken(#424a48, 5%);
+            border:0;
+        }
+        &:focus,&:active {
+            box-shadow: initial!important;
+            background: #424a48!important;
+            color:#f1f4f6!important;
+            border:0;
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .marketValueLabel {
+        display: none;
+    }
+    .marketAction {
+        justify-content: flex-end;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .marketValueItem {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .marketAction {
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+
+    .marketsTableTitleRow  {
+        display: none;
+    }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .marketValueItem {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .marketAction {
+        margin-top: 2rem;
+        justify-content: flex-start;
+    }
+
+    .marketsTableTitleRow  {
+        display: none;
+    }
+
+    .repayInFullContainer {
+        Button {
+            margin-top: 10px
+        }
+    }
+ }

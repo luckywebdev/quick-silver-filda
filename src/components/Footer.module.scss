@@ -1,0 +1,118 @@
+@import '../variables.scss';
+
+.footer {
+    color: white;
+    padding: 1.5rem 3.5rem;
+    background-color: $ExtraDarkBg;
+
+    .footerMenu {
+        font-size: 0.75rem;
+        font-weight: 200;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .links {
+            position: relative;
+            margin: 0 5px;
+            a {
+                color: $Grey;
+            }
+            &:nth-of-type(2) {
+                margin-left:10px;
+            }
+        }
+        .news {
+            &:after {
+                content: '';
+                position:absolute;
+                top:-5px;
+                right:-5px;
+                width:5px;
+                height:5px;
+                background: red;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .community {
+        font-size: 1.5rem;
+        font-weight: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .links {
+            a {
+                margin-left: 20px;
+                color: $Grey;
+                &:hover {
+                    color: $Green;
+                }
+            }
+        }
+    }
+
+    .poweredBy {
+        font-size: 0.75rem;
+        color: $Grey;
+        font-weight: 300;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        .poweredByText {
+            margin-right: 10px;
+            margin-left: 10px;
+            color: $Grey;
+        }
+
+        .heart {
+            color: $Red
+        }
+        .darkVersion {
+            color: $VersionDarkBg;
+        }
+    }
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .footer {
+        .footerMenu {
+            justify-content: center;
+        }
+        .community {
+            margin:20px 0;
+        }
+        .poweredBy {
+            justify-content: center;
+            align-items: center;
+        }
+     }
+}
+
+@media (max-width: 575.98px) { 
+    .footer {
+       .footerMenu {
+           justify-content: center;
+       }
+       .community {
+           margin:20px 0;
+       }
+       .poweredBy {
+           justify-content: center;
+           align-items: center;
+       }
+    }
+
+ }

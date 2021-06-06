@@ -1,0 +1,380 @@
+@import 'variables';
+
+
+.App-Content {
+    background: linear-gradient(180deg, $LightBg 4rem, $DarkBg 4rem);
+    padding-top: 20px;
+}
+
+.alertMsg {
+    text-align: center;
+    color: $White;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+
+.liquidate {
+    color: $White;
+    background-color: $DarkBg;
+    .introContainer {
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $LightBg;
+        .introText {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .poolsContainer {
+        padding: 1rem 0rem;
+        .poolContainer {
+            margin-bottom: 30px;
+            .tile {
+                background-color: $ExtraDarkBg;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1rem 2rem;
+                border: 1px solid $ExtraDarkBg;
+                .infoContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 100%;
+                    .header {
+                        margin: 0px;
+                        width: 100%;
+                        text-align: left;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                    }
+                    .label {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        user-select: none;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        color: $Grey;
+                        padding-bottom: 2px;
+                    }
+                    .poolItem {
+                        margin: 0px;
+                        cursor: pointer;
+                        border-top: 1px solid $LightBg;
+                        padding: 1rem 0;
+                        width: 100%;
+                        justify-content: flex-start;
+                        .value {
+                            display: flex;
+                            align-items: center;
+                            justify-content: left;
+                            font-size: 0.9rem;
+                            font-weight: 400;
+                            color: $White;
+
+                            .valueContent {
+                                display: flex;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                text-align: right;
+                                width: 100%;
+
+                                img {
+                                    background: radial-gradient(white, #888);
+                                    border-radius: 50%;
+                                    margin-right: 0.5rem;
+                                }
+                            }
+
+                            .valueLabel {
+                                margin-right: 5px;
+                                font-size: 0.75rem;
+                                color: $Grey;                                
+                                min-width: 70px;
+                                display: none;
+                            }
+                        }
+                        &:hover {
+                            background: $LightBg;
+                        }
+                    }
+                    .paginationContainer {
+                        padding: 1rem 1.5rem;
+                        margin-top: 15px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        .page-link:focus {
+                            outline: none !important;
+                            box-shadow: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.txnModal {
+
+    .headerInfo {
+        font-size: 1rem;
+        color: #ddd;
+        font-weight: 600;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .detailedBalance {
+        font-size: 0.5rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .liquidateContainer {
+        width: 100%;
+    }
+  
+    .inputLabelContainer {
+        justify-content: space-between;
+        display: flex;
+        .inputLabel {
+            color: $Grey;
+            font-size: 0.8rem;
+        }
+        .inputInfo {
+            cursor: pointer;
+            color: $Grey;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+    .amountInputContainer {
+        border: 2px solid $LightBg;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .assetSelect {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        border-radius: 20px;
+        background: $DarkBg;
+        color: #bbb;
+        font-weight: 600;
+        .tokenLogo {
+            padding: 5px;
+            background: radial-gradient(#aaa, black);
+            border-radius: 50%;
+        }
+        &:hover {
+            background: $LightBg;
+        }
+    }
+    .amountInput {
+        font-size: 1rem;
+        border: none;
+        text-align: left;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+    .liquidateInfo {
+        width: 100%;
+        color: $White;
+        text-align: center;
+    }
+
+    .infoItem {
+        width: 100%;
+        border-bottom: 1px solid $LightBg;
+        padding: 0.75rem 0rem;
+        .label {
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 300;
+            color: $Grey;
+        }
+        .value {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #ccc;
+            text-align: right;
+            .tokenInfo {
+                margin-left: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .tokenValue {
+                margin-left: 5px;
+            }
+        }
+    }        
+}
+
+
+.assetSelectModal {
+    .selectAssetDesc {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    .selectContainer {
+        width: 100%;
+        max-height: 70vh;
+        overflow-y: auto;
+
+        .assetItemRow {
+            color: $White;
+            font-size: 0.8rem;
+            border-bottom: 0.01rem solid $DarkGrey;
+            padding: 1rem;
+            width: 100%;
+            cursor: pointer;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background-color: $LightBg;
+            }
+
+            .assetNameContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 1rem;
+
+                img{
+                    background-color: $DarkBg;
+                    padding: 10px;
+                    border-radius: 5px;
+
+                }
+
+                .assetName {
+                    margin-left: 0.5rem;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            &-track {
+                background: transparent;
+            }
+            &-thumb {
+                background: $LightBg;
+                border-radius: 10px;
+            }
+        }
+    }    
+}
+
+@media (max-width: 768px) {
+    .txnModal {
+        .inputLabelContainer {
+            .inputLabel {
+                display: none;
+            }
+        }
+    }
+
+    .liquidate {
+        .poolsContainer {
+            .poolContainer {
+                .tile {
+                    .infoContainer {
+                        .header {
+                            display: none;
+                        }
+                        .poolItem {
+                            .value {
+                                justify-content: space-between;
+                                .valueLabel {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                .valueContent {
+                                    justify-content: flex-end;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

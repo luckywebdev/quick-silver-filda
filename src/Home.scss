@@ -1,0 +1,13 @@
+@import 'variables';
+
+.App-Content {
+  background: linear-gradient(180deg, $LightBg 4rem, $DarkBg 4rem);
+  padding-top: 20px;
+}
+
+.alertMsg {
+  text-align: center;
+  color: $White;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

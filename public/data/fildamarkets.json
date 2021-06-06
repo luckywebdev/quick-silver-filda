@@ -1,0 +1,33 @@
+{
+  "circulatingSupply": "9611925",
+  "fTokens": [
+    "0x824151251B38056d54A15E56B73c54ba44811aF8",
+    "0x0AD0bee939E00C54f57f21FBec0fBa3cDA7DEF58",
+    "0x043aFB65e93500CE5BCbf5Bbb41FC1fDcE2B7518",
+    "0xB16Df14C53C4bcfF220F4314ebCe70183dD804c0",
+    "0x749E0198f12559E7606987F8e7bD3AA1DE6d236E",
+    "0x033F8C30bb17B47f6f1f46F3A42Cc9771CCbCAAE",
+    "0xF2a308d3Aea9bD16799A5984E20FDBfEf6c3F595",
+    "0xCca471B0d49c0d4835a5172Fd97ddDEA5C979100",
+    "0x09e3d97A7CFbB116B416Dae284f119c1eC3Bd5ea",
+    "0x4937A83Dc1Fa982e435aeB0dB33C90937d54E424",
+    "0xAab0C9561D5703e84867670Ac78f6b5b4b40A7c1"
+  ],
+  "fildaPrice": "0.105",
+  "fildaSpeeds": "25",
+  "fildaSupply": "500000000",
+  "firstBlock": "984833",
+  "markets": [
+    "fHT",
+    "fELA",
+    "fHFIL",
+    "fHUSD",
+    "fHPT",
+    "fETH",
+    "fHBTC",
+    "fHDOT",
+    "fHBCH",
+    "fHLTC",
+    "fUSDT"
+  ]
+}

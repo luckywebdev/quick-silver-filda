@@ -1,0 +1,132 @@
+@import '../variables.scss';
+
+.marketsContainer {
+    padding: 0rem 2rem;
+
+    .pendingListContainer {
+        padding: 0rem 1rem;
+    }
+
+    .marketsTitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        color: $White;
+        margin-bottom: 3rem;
+    }
+
+    .marketsTableTitleRow {
+        color: $Grey;
+        font-size: 0.6rem;
+        border-bottom: 0.01rem solid $DarkGrey;
+        padding-bottom: 1rem;
+
+        .marketsTableTitle {
+            text-align: right;
+
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: center;
+            }
+        }
+    }
+
+    .borrowLink {
+        color: $Yellow !important
+    }
+
+    .marketsItemRow {
+        color: $White;
+        font-size: 0.8rem;
+        padding: 1.5rem 2rem;
+        background-color: $ExtraDarkBg;
+        border-radius: 10px;
+        margin-top: 10px;
+
+        .marketNameContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1rem;
+
+            img{
+                background-color: $ExtraDarkBg;
+                padding: 10px;
+                border-radius: 5px;
+
+            }
+
+            .marketName {
+                margin-left: 0.5rem;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .marketValue {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            div {
+                margin-left: 10px;
+            }
+        }
+
+        .txnLink {
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            color: $Green;
+            margin-top: 10px;
+            div {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .marketValue {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .marketAction {
+        margin-top: 1rem;
+    }
+
+    .marketsTableTitleRow  {
+        display: none;
+    }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .marketValue {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .marketAction {
+        margin-top: 1rem;
+    }
+
+    .marketsTableTitleRow  {
+        display: none;
+    }
+ }

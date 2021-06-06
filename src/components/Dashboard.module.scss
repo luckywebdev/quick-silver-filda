@@ -1,0 +1,305 @@
+@import '../variables.scss';
+
+.dashboard {
+    color: white;
+    padding: 4.5rem 2rem;
+    background-color: $LightBg;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.APY {
+    font-size: 0.75rem;
+    font-weight: 300;
+    span {
+        color: $Grey
+    }
+}
+
+
+.savingsContainer {
+    text-align: left;
+    margin-top: 15px;
+    .title {
+        color: $Green;
+    }
+}
+.netAPYContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .netAPYTile {
+        background-color: $DarkBg;
+        height: 125px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .netAPYContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;   
+            margin-bottom: 10px;
+            .title {
+                font-size: 0.75rem;
+                font-weight: 400;
+                color: $Grey
+            }
+            .value {
+                font-size: 1rem;
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+        .compBalanceContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .compBalance {
+                font-size: 0.75rem;
+                font-weight: 300;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.loansContainer {
+    text-align: right;
+    margin-top: 15px;
+    .title {
+        color: $Yellow;
+    }
+}
+
+.loanLimitContainer {
+    margin-top: 2.5rem;
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: $Grey;
+
+    .minLoan {
+        text-align: left;
+    }
+    .usedLoan {
+        text-align: center;
+    }
+    .maxLoan {
+        text-align: right;
+    }
+}
+
+.loanLimitBarOuter {
+    background-color: $Grey;
+    height: 12px;
+    margin-top: 10px;
+    border-top: 5px solid $LightBg;
+    border-bottom: 5px solid $LightBg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.loanLimitBarInner {
+    background-color: $Yellow;
+    height: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 100% !important;
+}
+
+.txnModal {
+
+    .assetName {
+        color: $White;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .txnTypeDesc {
+        font-size: 0.75 rem;
+        font-weight: 400;
+        color: $Grey;
+        margin-top: 5px;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+    }
+    .txnValueSmall {
+           font-size: 0.75rem !important;
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .detailedBalance {
+        font-size: 0.5rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .repayInFullContainer {
+        Button {
+            margin-right: 10px
+        }
+    }
+
+    .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .inCollateralMsg {
+        text-align: center;
+        color: $White
+    }
+
+    .loanLimitBarOuter {
+        background-color: $Grey;
+        height: 12px;
+        margin-top: 10px;
+        border-top: 5px solid $LightBg;
+        border-bottom: 5px solid $LightBg;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loanLimitBarInner {
+        background-color: $Yellow;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .infoText {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .percentText {
+        font-size: 0.75rem;
+        color: $White;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .percentValue {
+        font-size: 0.75rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .claimContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .balanceContainer {
+            padding-bottom: 1rem;
+            .label {
+                color: $Grey;
+                font-size: 0.75rem;
+            }
+            .value {
+                color: $White;
+                font-size: 1rem;
+            }
+        }
+
+        .icon {
+            color: $Green;
+            margin: 1rem;
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .netAPYTile {
+        width: 100%
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .netAPYTile {
+        width: 100%
+    }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .netAPYTile {
+        width: 100%
+    }
+
+    .title {
+        font-size: 0.75rem;
+    }
+    
+    .value {
+        font-size: 1rem;
+    }
+    
+    .APY {
+        font-size: 0.5rem;
+    }
+ }

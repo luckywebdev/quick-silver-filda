@@ -1,0 +1,288 @@
+@import '../variables.scss';
+
+.marketsContainer {
+    padding: 2.5rem 2rem;
+
+    .marketsTitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        color: $White;
+    }
+    .marketsCap {
+        font-size: 1rem;
+        color: bisque;
+        text-align: center;
+    }
+    .marketsBiz {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+        color: #adb5bd;
+        text-align: center;
+    }
+
+    .marketsTableNotes  {
+        color: grey;
+        font-size: 0.5rem;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .marketsTableTitleRow {
+        color: $Grey;
+        font-size: 0.6rem;
+        border-bottom: 0.01rem solid $DarkGrey;
+        padding-bottom: 1rem;
+
+        .marketsTableTitle {
+            text-align: right;
+
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: center;
+            }
+        }
+    }
+
+    .borrowLink {
+        color: $Yellow !important
+    }
+
+    .marketsItemRow {
+        cursor: pointer;
+        color: $White;
+        font-size: 0.8rem;
+        border-bottom: 0.01rem solid $DarkGrey;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+        &:hover {
+            background-color: $LightBg;
+        }
+
+        &:last-child {
+            border-bottom: none
+        }
+
+        .marketNameContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1rem;
+            .marketName {
+                margin-left: 0.5rem;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .marketValue {
+            text-align: right;
+
+            .marketValueItem {
+                .marketValueLabel {
+                    font-size: 0.75rem;
+                    color: $Grey;
+                }
+            }
+
+            .tokenValue {
+                font-size: 0.5rem;
+                color: $Grey;
+            }
+        }
+
+        .marketAction {
+            text-align: right;
+        }
+    }
+}
+
+.txnModal {
+    .assetName {
+        color: $White;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .txnTypeDesc {
+        font-size: 0.75 rem;
+        font-weight: 400;
+        color: $Grey;
+        margin-top: 5px;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+    }
+    .txnValueSmall {
+           font-size: 0.75rem !important;
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .txnCheckTips {
+        color: $Yellow;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+        // margin:0 10px;
+        margin: 0 10px 0 5px;
+        padding:0;
+    }
+    .checkTips {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .noCollateralMsgTitle {
+        font-size: 1rem;
+        color: $White;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .noCollateralMsgDesc {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+    }
+
+    .loanLimitBarOuter {
+        background-color: $Grey;
+        height: 12px;
+        margin-top: 10px;
+        border-top: 5px solid $Black;
+        border-bottom: 5px solid $Black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loanLimitBarInner {
+        background-color: $Yellow;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .loanLimitExceedBarInner {
+        background-color: $Red;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .infoText {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .percentText {
+        font-size: 0.75rem;
+        color: $White;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .percentValue {
+        font-size: 0.75rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .marketValueLabel {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .marketValueItem {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .marketAction {
+        margin-top: 1rem;
+    }
+
+    .marketsTableTitleRow  {
+        display: none;
+    }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .marketValueItem {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .marketAction {
+        margin-top: 1rem;
+    }
+
+    .marketsTableTitleRow  {
+        display: none;
+    }
+ }

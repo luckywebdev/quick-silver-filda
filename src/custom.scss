@@ -1,0 +1,170 @@
+@import 'variables';
+$body-bg: $LightBg;
+
+$theme-colors: (
+  "primary": $Green,
+  "secondary": $Blue,
+  "savings": $Green,
+  "loans": $Yellow,
+  "unstake": $Yellow,
+  "withdraw": $Yellow,
+  "rewards": $Yellow,
+  "tiles": $LightBg,
+  "cancel": $Grey
+);
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+.bg-dark {
+    background-color: $body-bg !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn {
+    font-size: 0.75rem;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar {
+    padding: 0
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $White;
+    font-weight: 300;
+    margin-right: 20px;
+    &.active {
+        color: $Green;
+        font-weight: 500;
+    }
+    &:hover {
+        color: $Green;
+    }
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: $ExtraDarkBg !important;
+    border-width: 0px;
+    color: $White;
+    padding: 1rem;
+}
+
+.nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link {
+    background-color: $DarkBg !important;
+    border-width: 0px;
+    color: $White;
+    padding: 1rem;
+}
+
+.pagination {
+    .page-item {
+        .page-link {
+            background-color: $DarkBg;
+            border: none;
+            color: $Grey;
+        }
+        &.active {
+            .page-link {
+                color: $White;
+            }
+        }
+    }
+}
+
+.modal-content {
+    background-color: $Black;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    .modal-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+
+        .close {
+            color: $Grey;
+            font-weight: 200;
+            text-shadow: none;
+            font-size: 2rem;
+            top: 1.5rem;
+            right: 1.5rem;
+            position: absolute;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            color: $White;
+            font-weight: 200;
+            margin-top: 10px;
+        }
+    }
+
+    .modal-body {
+        border: none;
+        text-align: center;
+    }
+
+    .modal-footer {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-control {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $White;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+    }
+}
+
+.dropdown-menu {
+    background-color: $White;
+    .dropdown-item {
+        font-size: 0.75rem;
+        margin-left: 0;
+    }
+}
+
+form {
+    .custom-switch {
+        .custom-control-label {
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.default-value-btn {
+    border-radius: 0.25rem !important;
+    margin-right: 10px;
+}

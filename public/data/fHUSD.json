@@ -1,0 +1,11 @@
+{
+  "cash": "1447653.70204908",
+  "collateralFactor": "900000000000000000",
+  "fToken": "0xB16Df14C53C4bcfF220F4314ebCe70183dD804c0",
+  "fildaSpeed": "750000000000000000",
+  "name": "HUSD",
+  "price": "1",
+  "token": "0x0298c2b32eaE4da002a15f36fdf7615BEa3DA047",
+  "totalBorrows": "5169177.5691378",
+  "totalSupply": "6616831.27118688"
+}

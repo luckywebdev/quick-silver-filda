@@ -1,0 +1,11 @@
+{
+  "cash": "0.6996195615373711",
+  "collateralFactor": "750000000000000000",
+  "fToken": "0x4937A83Dc1Fa982e435aeB0dB33C90937d54E424",
+  "fildaSpeed": "200000000000000000",
+  "name": "HLTC",
+  "price": "148.21",
+  "token": "0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4",
+  "totalBorrows": "13519.300434946907",
+  "totalSupply": "13520.000054508444"
+}

@@ -1,0 +1,11 @@
+{
+  "cash": "458080928.4517386",
+  "collateralFactor": "400000000000000000",
+  "fToken": "0x749E0198f12559E7606987F8e7bD3AA1DE6d236E",
+  "fildaSpeed": "250000000000000000",
+  "name": "HPT",
+  "price": "0.004",
+  "token": "0xE499Ef4616993730CEd0f31FA2703B92B50bB536",
+  "totalBorrows": "234487331.08928892",
+  "totalSupply": "692568259.5410275"
+}

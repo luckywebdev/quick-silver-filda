@@ -1,0 +1,143 @@
+@import 'variables';
+
+.vote {
+    color: $White;
+    padding-bottom: 25px;
+    background-color: $DarkBg;
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        background-color: $LightBg;
+        .label {
+            font-size: 1rem;
+            color: $Grey;
+        }
+        .value { 
+            font-size: 1.5rem;
+            color: $White;
+        }
+    }
+    .voteContent {
+        background: linear-gradient(180deg, $LightBg 4rem, $DarkBg 4rem);
+        padding-top: 20px;
+
+        .votingWallet {
+            background-color: $ExtraDarkBg;
+            border-radius: 10px;
+
+            .title {
+                font-size: 1rem;
+                padding: 2rem 2rem;
+                font-weight: 800;
+                border-bottom: 1px solid $LightBg;
+            }
+
+            .balanceContainer {
+                padding: 1.5rem 2rem;
+                border-bottom: 1px solid $LightBg;
+                .label {
+                    font-size: 0.75rem;
+                    color: $Grey;
+                }
+                .value {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .setupContainer {
+                padding: 1.5rem 2rem;
+                .label {
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+                .desc {
+                    font-size: 0.75rem;
+                    color: $Grey;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .governanceProposals {
+            background-color: $ExtraDarkBg;
+            border-radius: 10px;
+            .title {
+                font-size: 1rem;
+                padding: 2rem 2rem;
+                font-weight: 800;
+                border-bottom: 1px solid $LightBg;
+            }
+            .proposalContainer {
+                padding: 1.5rem 2rem;
+                border-bottom: 1px solid $LightBg;
+
+                &:last-child {
+                    border: none;
+                }
+
+                .name {
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
+                .infoContainer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 10px;
+                    .status {
+                        font-size: 0.75rem;
+                        padding: 4px 6px;
+                        margin-right: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        div {
+                            margin-left: 5px;
+                        }
+                        .passed {
+                            color: $Green;
+                        }
+                    }
+                    .id {
+                        color: $Grey;
+                        font-size: 0.75rem;
+                        font-weight: 600;
+                        margin-right: 10px;
+                    }
+                    .date {
+                        color: $Grey;
+                        color: $Grey;
+                        font-size: 0.75rem;
+                        font-weight: 600;
+                    }
+                }
+                .voteActionContainer {
+                    font-size: 1rem;
+                    color: $Grey;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .text {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .paginationContainer {
+                padding: 1rem 1.5rem;
+                margin-top: 15px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "cash": "1153749.5671006325",
+  "collateralFactor": "400000000000000000",
+  "fToken": "0x0AD0bee939E00C54f57f21FBec0fBa3cDA7DEF58",
+  "fildaSpeed": "400000000000000000",
+  "name": "ELA",
+  "price": "2.57",
+  "token": "0xa1ecFc2beC06E4b43dDd423b94Fef84d0dBc8F5c",
+  "totalBorrows": "249875",
+  "totalSupply": "1412133"
+}

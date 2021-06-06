@@ -1,0 +1,318 @@
+@import 'variables';
+
+.vote {
+    color: $White;
+    background-color: $DarkBg;
+    .introContainer {
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $LightBg;
+        .introText {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .pollsContainer {
+        padding: 3rem 0rem;
+        .itemContainer {
+            margin-bottom: 30px;
+            .tile {
+                background-color: $ExtraDarkBg;
+                border-radius: 10px;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem;
+                border: 1px solid $ExtraDarkBg;
+                text-align: center;
+                &.active {
+                    border: 1px solid $Yellow;
+                }
+                .headerContainer {
+                    .title {
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                        color: $White;
+                    }
+                    .activeStatus {
+                        color: $Yellow;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+                .dataContainer {
+                    width: 100%;
+                    .timeLeftContainer {
+                        .label {
+                            font-size: 0.75rem;
+                            color: $Grey;
+                        }
+                        .value {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            color: $White;
+                        }
+                    }
+                    .cannotCancel {
+                        margin-bottom: 3rem;
+                    }
+                    .passedContainer {
+                        .icon {
+                            font-size: 2rem;
+                            color: $Green;
+                        }
+                        .value {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            color: $Green;
+                        }
+                    }
+                    .rejectedContainer {
+                        .icon {
+                            font-size: 2rem;
+                            color: $LightBlue;
+                        }
+                        .value {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            color: $LightBlue;
+                        }
+                    }
+                    .multiVoteContainer {
+                        .voteCountItem {
+                            .label {
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                                color: $White;
+                            }
+                            .value {
+                                font-weight: 400;
+                                font-size: 1rem;
+                                color: $LightBlue;
+                            }
+                            &:first-child {
+                                .value {
+                                    color: $Green;
+                                }
+                            }
+                        }
+                    }
+                    .voteCountContainer {
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        .voteCountItem {
+                            .label {
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                                color: $White;
+                            }
+                            .value {
+                                font-weight: 400;
+                                font-size: 1rem;
+                                color: $LightBlue;
+                            }
+                            &:first-child {
+                                .value {
+                                    color: $Green;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footerContainer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    Button {
+                        width: 100%;
+                    }
+                }
+                .votedMsg {
+                    color: $White;
+                    font-size: 0.75rem;
+                }
+                .notVotedMsg {
+                    color: $Grey;
+                    font-size: 0.75rem;
+                }
+            }
+            .emptyTile {
+                height: 600px;
+                border: 1px solid $LightBg;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $Grey;
+                font-weight: 300;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.txnModal {
+    .modalContent {
+        align-items: normal;
+    }
+
+    &.withdraw {
+        a {
+            color: $Yellow !important
+        }
+    }
+    &.unstake {
+        a {
+            color: $Yellow !important
+        }
+    }
+    &.redeem {
+        a {
+            color: $Yellow !important
+        }
+    }
+
+    .assetName {
+        color: $White;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .txnTypeDesc {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: $Grey;
+        margin-top: 5px;
+    }
+    .footerInfo {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $White;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .tokenBalance {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+    }
+    .txnValueSmall {
+           font-size: 0.75rem !important;
+    }
+    .txnError {
+        color: $Red;
+        font-weight: 500;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .loadingContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-top: 15px;
+        }
+    }
+    .loadingText {
+        color: $White;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 20px;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .approvalMsg {
+        text-align: center;
+        color: $White;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .errorMsg {
+        text-align: center;
+        color: $Red;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .noCollateralMsgTitle {
+        font-size: 1rem;
+        color: $White;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .noCollateralMsgDesc {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+    }
+
+    .loanLimitBarOuter {
+        background-color: $Grey;
+        height: 12px;
+        margin-top: 10px;
+        border-top: 5px solid $Black;
+        border-bottom: 5px solid $Black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loanLimitBarInner {
+        background-color: $Yellow;
+        height: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100% !important;
+    }
+    .infoText {
+        font-size: 0.75rem;
+        color: $Grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .percentText {
+        font-size: 0.75rem;
+        color: $White;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .percentValue {
+        font-size: 0.75rem;
+        color: $Yellow;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+}
+
+.formControl {
+    border: 1px solid #ced4da !important;
+    font-size: 1rem !important;
+}

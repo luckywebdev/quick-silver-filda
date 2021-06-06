@@ -1,0 +1,11 @@
+{
+  "cash": "25458.80690740958",
+  "collateralFactor": "600000000000000000",
+  "fToken": "0x043aFB65e93500CE5BCbf5Bbb41FC1fDcE2B7518",
+  "fildaSpeed": "350000000000000000",
+  "name": "HFIL",
+  "price": "23.64",
+  "token": "0xae3a768f9aB104c69A7CD6041fE16fFa235d1810",
+  "totalBorrows": "110686.62636334279",
+  "totalSupply": "136145.43327075237"
+}

@@ -1,0 +1,11 @@
+{
+  "cash": "2256.7774112260117",
+  "collateralFactor": "800000000000000000",
+  "fToken": "0x09e3d97A7CFbB116B416Dae284f119c1eC3Bd5ea",
+  "fildaSpeed": "200000000000000000",
+  "name": "HBCH",
+  "price": "488.53",
+  "token": "0xeF3CEBD77E0C52cb6f60875d9306397B5Caca375",
+  "totalBorrows": "1682.954253967846",
+  "totalSupply": "3939.7316651938577"
+}

@@ -1,0 +1,11 @@
+{
+  "cash": "393.90750354451643",
+  "collateralFactor": "850000000000000000",
+  "fToken": "0xF2a308d3Aea9bD16799A5984E20FDBfEf6c3F595",
+  "fildaSpeed": "750000000000000000",
+  "name": "HBTC",
+  "price": "35832.15",
+  "token": "0x66a79D23E58475D2738179Ca52cd0b41d73f0BEa",
+  "totalBorrows": "141.01989898980057",
+  "totalSupply": "534.927402534317"
+}

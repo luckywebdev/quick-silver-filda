@@ -1,0 +1,78 @@
+body {
+    background-color:  #182133;
+    padding: 0px;
+    margin: 0px;
+    // overflow: hidden;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.connect-btn {
+    display: block;
+    width: 100%;
+    max-width: 514px;
+    margin: 0px auto 30px auto;
+}
+
+.logo {
+    display: block;
+    width: 234px;
+    margin: 0px auto 30px auto;
+    
+}
+
+.logo2 {
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+}
+
+.text {
+    font-family: Heiti TC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.text a {
+    color: #E5E5E5;
+}
+.zh-text {
+    margin-bottom: 10px;
+}
+.en-text {
+    margin-bottom: 20px;
+}
+.btn {
+    width: 270px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 10px;
+    color: #FFFDFD;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.Yes-btn {
+    background: #7BD8BB;
+    margin-bottom: 42px;
+}
+
+
+.No-btn {
+    background: #DB6387;
+}
+.time {
+    font-size: 48px;
+    line-height: 112px;
+    text-align: center;
+    color: #E5E5E5;
+}

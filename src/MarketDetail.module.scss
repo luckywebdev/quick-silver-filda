@@ -1,0 +1,165 @@
+@import 'variables';
+
+.marketDetail {
+    color: white;
+    background-color: $LightBg;
+    .header {
+        padding: 4.5rem 2rem 1rem 2rem;
+    }
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.borrowsContainer {
+    text-align: left;
+    margin-top: 15px;
+    .title {
+        color: $Red;
+    }
+}
+
+.liquidityContainer {
+    text-align: right;
+    margin-top: 15px;
+
+    .title {
+        color: $Green;
+    }
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    .introIcon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.informationPanel {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid $Grey;
+    color: $Grey;
+
+    .panelItem {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2;
+    }
+}
+
+.loanLimitBarOuter {
+    background-color: $Green;
+    height: 12px;
+    margin-top: 10px;
+    border: 2px hidden $Grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.loanLimitBarInner {
+    background-color: $Red;
+    height: 10px;
+    padding: 1px 0;
+    max-width: 100% !important;
+}
+
+.detailContent {
+    background: linear-gradient(180deg, $LightBg 4rem, $DarkBg 4rem);
+    padding: 20px 40px;
+}
+
+.marketDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    background-color: $ExtraDarkBg;
+
+    .caption {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        font-weight: bold;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .detailRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        min-height: 50px;
+        width: 100%;
+        border-top: 1px solid $LightBg;
+        padding: 0;
+        
+        .label {
+            padding: 0 1rem;
+            color: $Grey;
+        }
+        .text {
+            padding: 0 1rem;
+            text-align: right;
+            color: $White;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+svg text {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+svg text::selection {
+    background: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .title {
+        font-size: 0.75rem;
+    }
+    
+    .value {
+        font-size: 1rem;
+    }
+    
+    .detailRow {
+        font-size: 0.75rem;
+    }
+ }
+
+@media (max-width: 768px) { 
+    .detailRow {
+        padding: 4px 0 !important;
+        .label {
+            text-align: center !important;
+        }
+        .text {
+            margin-top: 4px;
+            text-align: center !important;
+        }
+    }
+ }

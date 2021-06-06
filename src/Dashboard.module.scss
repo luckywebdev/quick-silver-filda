@@ -1,0 +1,200 @@
+@import 'variables';
+
+.summary {
+    color: $White;
+    background-color: $DarkBg;
+    .introContainer {
+        padding: 3rem 0rem 2.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $LightBg;
+        .introText {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .summaryContainer {
+        background: linear-gradient(180deg, $LightBg 4rem, $DarkBg 4rem);
+        padding-bottom: 20px;
+        .tile {
+            background-color: $ExtraDarkBg;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 700px;
+            .itemContainer {
+                text-align: center;
+                .label {
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                    color: $Green;
+                }
+                .value {
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    .marketsContainer {
+        padding-bottom: 3rem;
+    }
+    .poolsContainer {
+        padding: 1rem 0rem;
+        .poolContainer {
+            // margin-bottom: 30px;
+            .tile {
+                background-color: $ExtraDarkBg;
+                border-radius: 10px;
+                // height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // align-items: center;
+                padding: 1rem 2rem;
+                border: 1px solid $ExtraDarkBg;
+                .infoContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: left;
+                    width: 100%;
+                    .green {
+                        color: $Green;
+                    }
+                    .yellow {
+                        color: $Yellow;
+                    }
+                    .header {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: left;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                    }
+                    .label {
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        color: $Grey;
+                        padding-bottom: 2px;
+                    }
+                    .poolItem {
+                        .value {
+                            font-size: 0.9rem;
+                            font-weight: 400;
+                            color: $White;
+                        }
+                        &:last-child {
+                            border: none;
+                        }
+                        img{
+                            margin-right: 0.5rem;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Dashboard
+.dashboard {
+    color: white;
+    padding: 4.5rem 2rem;
+    background-color: $LightBg;
+}
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.value {
+    font-size: 2rem;
+    font-weight: 200;
+}
+.TVLContainer {
+    text-align: center;
+    .title {
+        font-size: 1.4rem;
+        font-weight: 1rem;
+        color: $Yellow;
+    }
+}
+.tokenParameterLabel {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: $Grey;
+    padding-top: 10px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .tokenParameterLabel {
+        display: none;
+    }
+    .itemContainer {
+        border-right: 1px solid $White;
+        padding: 0;
+    }
+    .poolItem {
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    .tokenTitleContainer {
+        font-size: 0.9rem;
+        align-items: center;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .sectionColumnHeaders {
+        display: none;
+    }
+    .itemContainer {
+        padding: 0.5rem 0rem;
+    }
+    .poolItem {
+        border-bottom: 0.01rem solid $Grey;
+    }
+    .tokenTitleContainer {
+        font-size: 1.15rem;
+        align-items: center;
+    }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .title {
+        font-size: 0.75rem;
+    }
+    .sectionColumnHeaders {
+        display: none;
+    }
+    .itemContainer {
+        padding: 0.35rem 0rem;
+    }
+    .poolItem {
+        border-bottom: 0.01rem solid $Grey;
+        padding: 0.5rem 0rem;
+    }
+    .tokenTitleContainer {
+        font-size: 1.15rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+ }

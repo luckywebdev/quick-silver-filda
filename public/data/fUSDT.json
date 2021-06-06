@@ -1,0 +1,11 @@
+{
+  "cash": "1836354.7409484296",
+  "collateralFactor": "900000000000000000",
+  "fToken": "0xAab0C9561D5703e84867670Ac78f6b5b4b40A7c1",
+  "fildaSpeed": "1000000000000000000",
+  "name": "USDT",
+  "price": "1",
+  "token": "0xa71EdC38d189767582C38A3145b5873052c3e47a",
+  "totalBorrows": "6046408.736805396",
+  "totalSupply": "7882763.4777538255"
+}

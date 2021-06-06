@@ -1,0 +1,11 @@
+{
+  "cash": "3970.8432840286323",
+  "collateralFactor": "800000000000000000",
+  "fToken": "0x033F8C30bb17B47f6f1f46F3A42Cc9771CCbCAAE",
+  "fildaSpeed": "400000000000000000",
+  "name": "ETH",
+  "price": "1224.76",
+  "token": "0x64FF637fB478863B7468bc97D30a5bF3A428a1fD",
+  "totalBorrows": "1784.2140058422322",
+  "totalSupply": "5755.057289870864"
+}
